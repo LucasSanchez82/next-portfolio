@@ -3,7 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import imaginarium from "@/public/imaginarium.png";
+import manweb from "@/public/manweb.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -35,73 +36,66 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Creations de projets divers",
+    location: "Domicile",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Apprentissage des bases de programmations puis de concept propre certains framework, par exemple pour ne citer que Nextjs et ses :  app router, useQuery, re-render, hydratation, server side rendering",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019-Aujourd'hui",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Imaginarium php",
+    location: "Montdoumerc",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Premiere annee de stage, Creation cahier des charges, modelisation base de donnée et creation maquette php",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Imaginarium NextJS",
+    location: "MontDoumerc",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Poursuite et migration vers NextJS, qui permet plus d'interactivites et un devellopement plus rapide",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2024",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Imaginarium",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Solution métier de gestion des ressources humaines dont s'occupe l'association L'Imaginarium",
+    tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
+    imageUrl: imaginarium,
   },
   {
-    title: "rmtDev",
+    title: "manweb",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Application web qui permet de noter ses lectures l'endroit ou on peut les lires et le dernier chapitre lu",
+    tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
+    imageUrl: manweb,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
+  // "HTML",
+  // "CSS",
+  // "JavaScript",
   "Next.js",
   "Node.js",
+  "React",
+  "TypeScript",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "SQL",
+  // "Tailwind",
+  // "Prisma",
+  // "MongoDB",
+  // "Redux",
+  // "GraphQL",
+  // "Apollo",
+  // "Express",
+  // "Python",
+  // "Django",
+  // "Framer Motion",
 ] as const;

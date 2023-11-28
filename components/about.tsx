@@ -17,12 +17,13 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>A propos de moi</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
+        Je suis un passioné de {""}
+        <span className="font-medium">créations</span>, de gadgets fonctionnels
+        répondants à des besoins. Quotidiennement je teste de nouvelles choses
+        ou cherche à améliorer mes conceptions existantes pour mieux répondre à
+        mes <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
