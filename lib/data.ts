@@ -1,23 +1,21 @@
+import imaginarium from "@/public/imaginarium.png";
+import manweb from "@/public/manweb.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import imaginarium from "@/public/imaginarium.png";
-import manweb from "@/public/manweb.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "Accueil",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "Moi",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "Projets",
     hash: "#projects",
   },
   {
@@ -25,7 +23,7 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "Experiences",
     hash: "#experience",
   },
   {
@@ -47,7 +45,7 @@ export const experiencesData = [
     title: "Imaginarium php",
     location: "Montdoumerc",
     description:
-      "Premiere annee de stage, Creation cahier des charges, modelisation base de donnée et creation maquette php",
+      "Mise en place du cahier des charges, modélisation de la base de donnée et conception de la maquette php",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
@@ -55,7 +53,7 @@ export const experiencesData = [
     title: "Imaginarium NextJS",
     location: "MontDoumerc",
     description:
-      "Poursuite et migration vers NextJS, qui permet plus d'interactivites et un devellopement plus rapide",
+      "Migration vers NextJS, qui permet plus d'interactivites et un developpement plus rapide",
     icon: React.createElement(FaReact),
     date: "2024",
   },
@@ -65,12 +63,12 @@ export const projectsData = [
   {
     title: "Imaginarium",
     description:
-      "Solution métier de gestion des ressources humaines dont s'occupe l'association L'Imaginarium",
+      "Solution métier de gestion des ressources humaines",
     tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
     imageUrl: imaginarium,
   },
   {
-    title: "manweb",
+    title: "Manweb",
     description:
       "Application web qui permet de noter ses lectures l'endroit ou on peut les lires et le dernier chapitre lu",
     tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
