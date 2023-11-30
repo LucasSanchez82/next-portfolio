@@ -11,7 +11,7 @@ import { HiDownload } from "react-icons/hi";
 import myFace from "@/public/my-face.jpeg";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Accueil", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (

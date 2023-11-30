@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Moi");
 
   return (
     <motion.section
@@ -19,8 +19,8 @@ export default function About() {
     >
       <SectionHeading>A propos de moi</SectionHeading>
       <p className="mb-3">
-        Je suis un passioné de {""}
-        <span className="font-medium">créations</span>, de gadgets fonctionnels
+        Je suis un passioné de{" "}
+        <span className="font-medium">Conception</span>, de gadgets fonctionnels
         répondants à des besoins. Quotidiennement je teste de nouvelles choses
         ou cherche à améliorer mes conceptions existantes pour mieux répondre à
         mes <span className="font-medium">full-stack web development</span>.{" "}
@@ -31,19 +31,13 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . Je suis aussi habitué à travailler avec typescript et prisma. Je me
+        documente quotidiennement sur les nouvelles technologies.
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        <span className="italic">Quand je ne developpe pas</span>, Je m'amuse à
+        jouer avec mon chien lors de ballades en forets, parcs etc...
       </p>
     </motion.section>
   );
