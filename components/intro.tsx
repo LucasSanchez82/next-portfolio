@@ -68,7 +68,7 @@ export default function Intro() {
         <br />
         Un{" "}
         <span className="font-bold">
-          jeune dévellopeur visant le fullstack.
+          jeune développeur visant le fullstack.
         </span>{" "}
         force de mes{" "}
         <span className="font-bold">

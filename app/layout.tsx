@@ -10,8 +10,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Lucas Sanchez | Personal Portfolio",
-  description: "Lucas Sanchez, dévellopeur web et étudiant en BTS SIO SLAM",
+  title: "Lucas Sanchez | Portfolio personnel",
+  description: "Lucas Sanchez, développeur web et étudiant en BTS SIO SLAM",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="fr" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
