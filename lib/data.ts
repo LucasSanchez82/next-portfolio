@@ -70,7 +70,7 @@ export const projectsData = [
   {
     title: "Manweb",
     description:
-      "Application web qui permet de noter ses lectures l'endroit ou on peut les lires et le dernier chapitre lu",
+      "Application web qui permet de noter ses lectures, l'endroit ou on peut les lires et le dernier chapitre lu",
     tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
     imageUrl: manweb,
   },

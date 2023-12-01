@@ -19,20 +19,19 @@ export default function About() {
     >
       <SectionHeading>A propos de moi</SectionHeading>
       <p className="mb-3">
-        Je suis un passioné de{" "}
-        <span className="font-medium">Conception</span>, de gadgets fonctionnels
-        répondants à des besoins. Quotidiennement je teste de nouvelles choses
-        ou cherche à améliorer mes conceptions existantes pour mieux répondre à
-        mes <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . Je suis aussi habitué à travailler avec typescript et prisma. Je me
-        documente quotidiennement sur les nouvelles technologies.
+        Je suis un passioné de <span className="font-medium">Conception</span>,
+        de gadgets fonctionnels répondants à des besoins. Quotidiennement
+        j'apprends de nouvelles choses j'améliore mes projets existants qui
+        repondent à des besoins personnels
+        <span className="font-medium">full-stack web development</span>.{" "}
+        <span className="italic">J'aime le dev</span> pour le plaisir de voir
+        des solutions à des problèmes.
+        <span className="underline"> Ce plaisir </span>
+        Le plaisir de voir que la mise en production a fonctionné du premier
+        coup reste une des plus belles choses qui puisse arriver dans une vie.
+        <span className="font-medium">React, Next.js, Node.js, et SQL</span>.
+        Enfin je suis aussi habitué à travailler avec typescript et prisma. Je
+        suis en constante veille technologique, de part ma grande curiosité
       </p>
 
       <p>
