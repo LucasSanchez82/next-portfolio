@@ -1,5 +1,5 @@
 import About from "@/components/about";
-import Actuality from "@/components/actuality";
+import Veille from "@/components/veille";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
 import Intro from "@/components/intro";
@@ -16,8 +16,8 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
+      <Veille />
       <Contact />
-      <Actuality />
     </main>
   );
 }
