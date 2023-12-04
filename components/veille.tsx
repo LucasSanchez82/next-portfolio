@@ -15,7 +15,7 @@ type ActuType = {
     content: string;
     contentSnippet: string;
     isoDate: string;
-    pubDate: string;
+    pubDate: Date;
     title: string;
     link: string;
   }[];
@@ -31,17 +31,16 @@ const actuSchema = z.object({
       content: z.string(),
       contentSnippet: z.string(),
       isoDate: z.string(),
-      pubDate: z.string(),
+      pubDate: z.coerce.date(),
       title: z.string(),
       link: z.string().url(),
     })
   ),
 });
-export default function Actuality() {
-  const { ref } = useSectionInView("VeilleTechno", 0.5);
+export default function Veille() {
+  const { ref } = useSectionInView("Veille", 0.5);
   const [actus, setActus] = useState<ActuType[]>([]);
   useEffect(() => {
-    console.log("salut");
     try {
       const listFeeds = [
         {
@@ -80,21 +79,25 @@ export default function Actuality() {
     }
   }, [])
   return (
-    <section ref={ref} id="actuality" className="scroll-mt-28 mb-28">
+    <section ref={ref} id="veille" className="scroll-mt-28 mb-28">
       <SectionHeading>Veille techno</SectionHeading>
       <div className="flex align-middle justify-center">
         {actus.slice(0, 3).map((actualite) => (
           <div className="m-5 flex flex-col justify-start align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <h2 className="text-center">{actualite.title}</h2>
-            <h3 className="text-center">{actualite.link}</h3>
-            {actualite.description && <p className="text-center">{actualite.description}</p>}
-            {actualite.items.slice(0, 3).map((item) => (
-              <Link href={item.link} className="bg-gray-100 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 rounded m-5 p-2">
+            {/* {actualite.description && actualite.description != 'undefined' && <p className="text-center">{actualite.description}</p>} */}
+            {actualite.items.slice(0, 3).map((item) => {
+              const currDate =  item.pubDate;
+              const nowDate = new Date();
+
+              const diffDate = nowDate.getTime() - currDate.getTime() ;
+              return (
+              <Link target="_blank" href={item.link} className="bg-gray-100 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 rounded m-5 p-2">
                 <h2 className="text-center">{item.title}</h2>
                 <p className="text-justify">{item.contentSnippet}</p>
-                <p>{item.pubDate}</p>
+                <p>Il y a {Math.round(diffDate / (1000 * 3600 * 24))} jours</p>
               </Link>
-            ))}
+            )})}
           </div>
         ))}
       </div>
