@@ -5,6 +5,7 @@ import Parser from "rss-parser";
 import SectionHeading from "./section-heading";
 import { useEffect, useState } from "react";
 import z from "zod";
+import Link from "next/link";
 type ActuType = {
   title: string;
   description: string;
@@ -16,6 +17,7 @@ type ActuType = {
     isoDate: string;
     pubDate: string;
     title: string;
+    link: string;
   }[];
 };
 const actuSchema = z.object({
@@ -31,11 +33,12 @@ const actuSchema = z.object({
       isoDate: z.string(),
       pubDate: z.string(),
       title: z.string(),
+      link: z.string().url(),
     })
   ),
 });
 export default function Actuality() {
-  const { ref } = useSectionInView("Projets", 0.5);
+  const { ref } = useSectionInView("VeilleTechno", 0.5);
   const [actus, setActus] = useState<ActuType[]>([]);
   useEffect(() => {
     console.log("salut");
@@ -79,20 +82,18 @@ export default function Actuality() {
   return (
     <section ref={ref} id="actuality" className="scroll-mt-28 mb-28">
       <SectionHeading>Veille techno</SectionHeading>
-      <div>
+      <div className="flex align-middle justify-center">
         {actus.slice(0, 3).map((actualite) => (
-          <div className="scroll-mt-28 mb-28 sm:mb-40">
-            <h2>{actualite.title}</h2>
-            <h3>{actualite.link}</h3>
-            <p>{actualite.description}</p>
-            <p>{actualite.lastBuildDate}</p>
+          <div className="m-5 flex flex-col justify-start align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <h2 className="text-center">{actualite.title}</h2>
+            <h3 className="text-center">{actualite.link}</h3>
+            {actualite.description && <p className="text-center">{actualite.description}</p>}
             {actualite.items.slice(0, 3).map((item) => (
-              <div className="bg-red-400 border-blue-500 rounded m-5">
-                <h2>{item.title}</h2>
-                <p>{item.content}</p>
+              <Link href={item.link} className="bg-gray-100 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 rounded m-5 p-2">
+                <h2 className="text-center">{item.title}</h2>
+                <p className="text-justify">{item.contentSnippet}</p>
                 <p>{item.pubDate}</p>
-                <p>{item.contentSnippet}</p>
-              </div>
+              </Link>
             ))}
           </div>
         ))}
