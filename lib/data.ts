@@ -36,6 +36,19 @@ export const links = [
   },
 ] as const;
 
+export const veilleRSS = [
+  {
+    slug: "nextjs-blog",
+    title: "Next.js Blog",
+    url: "https://nextjs.org/feed.xml",
+  },
+  {
+    slug: "vercel-blog",
+    title: "Vercel Blog",
+    url: "https://vercel.com/atom",
+  },
+]
+
 export const experiencesData = [
   {
     title: "Creations de projets divers",
