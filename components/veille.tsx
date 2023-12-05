@@ -6,6 +6,9 @@ import SectionHeading from "./section-heading";
 import { useEffect, useState } from "react";
 import z from "zod";
 import Link from "next/link";
+import { veilleRSS } from "@/lib/data";
+import { motion, useScroll, useTransform } from "framer-motion";
+import ArticleVeille from "./veille/veille.article.component";
 type ActuType = {
   title: string;
   description: string;
@@ -40,67 +43,50 @@ const actuSchema = z.object({
 export default function Veille() {
   const { ref } = useSectionInView("Veille", 0.5);
   const [actus, setActus] = useState<ActuType[]>([]);
+
   useEffect(() => {
     try {
-      const listFeeds = [
-        {
-          slug: "nextjs-blog",
-          title: "Next.js Blog",
-          url: "https://nextjs.org/feed.xml",
-        },
-        {
-          slug: "vercel-blog",
-          title: "Vercel Blog",
-          url: "https://vercel.com/atom",
-        },
-      ];
-
       const getFeed = async (feedUrl: string) => {
         const parser = new Parser();
         const feed = await parser.parseURL(feedUrl);
 
         return feed;
       };
-      listFeeds.map(async (feedItem) => {
+      veilleRSS.map(async (feedItem) => {
+        // pour chaque article du feed
         const feed = await getFeed(feedItem.url);
-
-          console.log(feed);
-
-          const safeActus = actuSchema.safeParse(feed);
-          if (safeActus.success) {
-            setActus((curr) => [...curr, safeActus.data]);
-          } else {
-            console.log(safeActus.error);
-          }
-        });
-      // });
+        const safeActus = actuSchema.safeParse(feed);
+        if (safeActus.success) {
+          setActus((curr) => [...curr, safeActus.data]);
+        } else {
+          console.log(safeActus.error);
+        }
+      });
     } catch (error) {
       console.log(error);
     }
-  }, [])
+  }, []);
   return (
-    <section ref={ref} id="veille" className="scroll-mt-28 mb-28">
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="veille"
+      ref={ref}
+      className="scroll-mt-28 mb-28"
+    >
       <SectionHeading>Veille techno</SectionHeading>
-      <div className="flex align-middle justify-center">
-        {actus.slice(0, 3).map((actualite) => (
-          <div className="m-5 flex flex-col justify-start align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-            <h2 className="text-center">{actualite.title}</h2>
-            {/* {actualite.description && actualite.description != 'undefined' && <p className="text-center">{actualite.description}</p>} */}
-            {actualite.items.slice(0, 3).map((item) => {
-              const currDate =  item.pubDate;
-              const nowDate = new Date();
+      <div className="flex align-middle justify-center flex-wrap">
+        {actus.map((actualite) => (
+          <div className="pt-2 m-5 flex flex-col justify-between align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+            <h2 className="text-center font-">{actualite.title}</h2>
 
-              const diffDate = nowDate.getTime() - currDate.getTime() ;
-              return (
-              <Link target="_blank" href={item.link} className="bg-gray-100 dark:text-white dark:bg-white/10 dark:hover:bg-white/20 rounded m-5 p-2">
-                <h2 className="text-center">{item.title}</h2>
-                <p className="text-justify">{item.contentSnippet}</p>
-                <p>Il y a {Math.round(diffDate / (1000 * 3600 * 24))} jours</p>
-              </Link>
-            )})}
+            {actualite.items.slice(0, 3).map((item, key) => (
+              <ArticleVeille item={item} key={key} />
+            ))}
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
