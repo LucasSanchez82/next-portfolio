@@ -42,6 +42,11 @@ export const veilleRSS = [
     title: "Next.js Blog",
     url: "https://nextjs.org/feed.xml",
   },
+  // {
+  //   slug: "grafikart-blog",
+  //   title: "Grafikart",
+  //   url: "https://grafikart.fr/feed.rss",
+  // },
   {
     slug: "vercel-blog",
     title: "Vercel Blog",

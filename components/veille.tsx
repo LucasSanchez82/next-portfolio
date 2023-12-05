@@ -1,13 +1,12 @@
 "use client";
 
-import { useSectionInView } from "@/lib/hooks";
-import Parser from "rss-parser";
-import SectionHeading from "./section-heading";
-import { useEffect, useState } from "react";
-import z from "zod";
-import Link from "next/link";
 import { veilleRSS } from "@/lib/data";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import Parser from "rss-parser";
+import z from "zod";
+import SectionHeading from "./section-heading";
 import ArticleVeille from "./veille/veille.article.component";
 type ActuType = {
   title: string;
@@ -49,7 +48,8 @@ export default function Veille() {
       const getFeed = async (feedUrl: string) => {
         const parser = new Parser();
         const feed = await parser.parseURL(feedUrl);
-
+        console.log(feed);
+        
         return feed;
       };
       veilleRSS.map(async (feedItem) => {
