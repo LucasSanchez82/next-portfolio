@@ -24,10 +24,9 @@ export default function About() {
         j'apprends de nouvelles choses j'améliore mes projets existants qui
         repondent à des besoins personnels
         <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">J'aime le dev</span> pour le plaisir de voir
+        <span className="italic">J'aime le dev</span> pour le plaisir de concevoir
         des solutions à des problèmes.
-        <span className="underline"> Ce plaisir </span>
-        Le plaisir de voir que la mise en production a fonctionné du premier
+        <span className="underline"> La satisfaction </span>de voir que la mise en production a fonctionné du premier
         coup reste une des plus belles choses qui puisse arriver dans une vie.
         <span className="font-medium">React, Next.js, Node.js, et SQL</span>.
         Enfin je suis aussi habitué à travailler avec typescript et prisma. Je

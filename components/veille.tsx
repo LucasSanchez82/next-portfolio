@@ -77,8 +77,8 @@ export default function Veille() {
     >
       <SectionHeading>Veille techno</SectionHeading>
       <div className="flex align-middle justify-center flex-wrap">
-        {actus.map((actualite) => (
-          <div className="pt-2 m-5 flex flex-col justify-between align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+        {actus.map((actualite, key) => (
+          <div key={key} className="pt-2 m-5 flex flex-col justify-between align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
             <h2 className="text-center font-">{actualite.title}</h2>
 
             {actualite.items.slice(0, 3).map((item, key) => (
