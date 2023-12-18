@@ -1,9 +1,9 @@
 import imaginarium from "@/public/imaginarium.png";
 import manweb from "@/public/manweb.png";
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { SiPhp } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const links = [
   {
@@ -19,7 +19,7 @@ export const links = [
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "Competences",
     hash: "#skills",
   },
   {
@@ -52,6 +52,11 @@ export const veilleRSS = [
     title: "Vercel Blog",
     url: "https://vercel.com/atom",
   },
+  {
+    slug: "react-blog",
+    title: "react blog",
+    url: "https://legacy.reactjs.org/feed.xml",
+  }
 ]
 
 export const experiencesData = [
@@ -68,7 +73,7 @@ export const experiencesData = [
     location: "Montdoumerc",
     description:
       "Mise en place du cahier des charges, modélisation de la base de donnée et conception de la maquette php",
-    icon: React.createElement(CgWorkAlt),
+    icon: React.createElement(SiPhp),
     date: "2023",
   },
   {
@@ -76,7 +81,7 @@ export const experiencesData = [
     location: "MontDoumerc",
     description:
       "Migration vers NextJS, qui permet plus d'interactivites et un developpement plus rapide",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(TbBrandNextjs),
     date: "2024",
   },
 ] as const;

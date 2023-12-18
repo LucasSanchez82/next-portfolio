@@ -72,12 +72,12 @@ export default function Intro() {
         </span>{" "}
         force de mes{" "}
         <span className="font-bold">
-          années autodidactes et de ma curiosités
+          années autodidactes et de ma curiosité
         </span>{" "}
-        j'alimente constemment mes connaissances{" "}
-        <span className="font-bold">javascript</span>. I Toujours enjoué l'idée
+        j'alimente constamment mes connaissances{" "}
+        <span className="font-bold">Javascript</span>. Toujours enjoué à l'idée
         de concrétiser des <span className="italic">sites & apps</span>. Je me
-        concentre actuellent sur{" "}
+        concentre actuellement sur{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
@@ -89,7 +89,7 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <div className="flex ">
+        <div className="flex flex-wrap justify-center items-center">
           <Link
             href="#contact"
             className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 hover:bg-gray-950 active:scale-105 transition"
