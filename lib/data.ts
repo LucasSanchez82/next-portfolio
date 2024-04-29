@@ -93,6 +93,7 @@ export const projectsData = [
       "Solution métier de gestion des ressources humaines",
     tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
     imageUrl: imaginarium,
+    projectUrl: "https://imaginarium.lucas-sanchez.fr"
   },
   {
     title: "Manweb",
@@ -100,6 +101,7 @@ export const projectsData = [
       "Application web qui permet de noter ses lectures, l'endroit ou on peut les lires et le dernier chapitre lu",
     tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
     imageUrl: manweb,
+    projectUrl: "https://manweb.lucas-sanchez.fr"
   },
 ] as const;
 
