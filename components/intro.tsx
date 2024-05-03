@@ -102,40 +102,40 @@ export default function Intro() {
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 
-          <a
+          <Link
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/CV.pdf"
+            href="https://drive.google.com/file/d/1GFmoAVfgcXZSFnynwbqB7dcUOvap0qnx/view?usp=sharing"
             target="_blank"
           >
             Visualiser CV
             <FaEye className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
+          </Link>
 
-          <a
+          <Link
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/tableur.pdf"
+            href="https://drive.google.com/file/d/1PWmDRDksCSS3KCeOxgc02LPsfmjmhwYu/view?usp=sharing"
             target="_blank"
           >
             Tableau synthèse
             <FaTable className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
+          </Link>
         </div>
         <div className="flex">
-          <a
+          <Link
             className="bg-white p-4 m-2  text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/lucas-sanchez-8ba32920a/"
             target="_blank"
           >
             <BsLinkedin />
-          </a>
+          </Link>
 
-          <a
+          <Link
             className="bg-white p-4 m-2 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/LucasSanchez82"
             target="_blank"
           >
             <FaGithubSquare />
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>
