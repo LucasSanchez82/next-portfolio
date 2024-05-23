@@ -53,9 +53,9 @@ export const veilleRSS = [
     url: "https://vercel.com/atom",
   },
   {
-    slug: "react-blog",
-    title: "react blog",
-    url: "https://legacy.reactjs.org/feed.xml",
+    slug: "bun",
+    title: "bun runtime javascript",
+    url: "https://bun.sh/rss.xml",
   }
 ]
 

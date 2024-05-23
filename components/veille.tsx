@@ -76,7 +76,7 @@ export default function Veille() {
       className="scroll-mt-28 mb-28"
     >
       <SectionHeading>Veille techno</SectionHeading>
-      <iframe className="m-auto rounded" width="560" height="315" src="https://www.youtube.com/embed/69ob9kfspdw?si=Pc4V8l9HvU-2sGcW" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <iframe className="m-auto rounded" width="560" height="315" src="https://www.youtube.com/embed/69ob9kfspdw?si=Pc4V8l9HvU-2sGcW" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       <div className="flex align-middle justify-center flex-wrap">
         {actus.map((actualite, key) => (
           <div key={key} className="pt-2 m-5 flex flex-col justify-between align-middle bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
@@ -88,6 +88,7 @@ export default function Veille() {
           </div>
         ))}
       </div>
+      <iframe className="m-auto rounded" width="560" height="315" src="https://www.youtube.com/embed/xpu-zJ3UvhU?si=3rSeTQqEGBlvhQd9" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
     </motion.section>
   );
 }
