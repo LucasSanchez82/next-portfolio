@@ -64,7 +64,7 @@ export const experiencesData = [
     title: "Creations de projets divers",
     location: "Domicile",
     description:
-      "Apprentissage des bases de programmations puis de concept propre certains framework, par exemple pour ne citer que Nextjs et ses :  app router, useQuery, re-render, hydratation, server side rendering",
+      "Apprentissage des bases de programmations puis de concept propre à certains framework, par exemple pour ne citer que Nextjs et ses :  app router, useQuery, re-render, hydratation, server side rendering",
     icon: React.createElement(LuGraduationCap),
     date: "2019-Aujourd'hui",
   },
