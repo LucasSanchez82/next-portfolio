@@ -2,13 +2,12 @@
 
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
+import myFace from "@/public/my-face.jpeg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { FaEye, FaGithubSquare, FaTable } from "react-icons/fa";
-import { HiDownload, HiViewList } from "react-icons/hi";
-import myFace from "@/public/my-face.jpeg";
 
 export default function Intro() {
   const { ref } = useSectionInView("Accueil", 0.5);
@@ -63,22 +62,20 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Bonjour, je suis <strong>Lucas Sanchez</strong>
+        Bonjour, je m'appelle <strong>Lucas Sanchez</strong>
         </span>{" "}
         <br />
-        Un{" "}
+        Je suis un{" "}
         <span className="font-bold">
-          jeune développeur visant le fullstack.
+          développeur débutant avec une orientation fullstack.
         </span>{" "}
-        force de mes{" "}
+        Grâce à mes{" "}
         <span className="font-bold">
-          années autodidactes et de ma curiosité
+          années d'apprentissage autonome et à ma curiosité naturelle,
         </span>{" "}
-        j'alimente constamment mes connaissances{" "}
-        <span className="font-bold">Javascript</span>. Toujours enjoué à l'idée
-        de concrétiser des <span className="italic">sites & apps</span>. Je me
-        concentre actuellement sur{" "}
-        <span className="underline">React (Next.js)</span>.
+        je nourris en permanence mon savoir en{" "}
+        <span className="font-bold">Javascript</span>. Animé par l'enthousiasme de réaliser des <span className="italic">sites web et applications</span>, je me spécialise actuellement en{" "}
+        <span className="underline">React et Next.js</span>.
       </motion.h1>
 
       <motion.div

@@ -19,22 +19,11 @@ export default function About() {
     >
       <SectionHeading>A propos de moi</SectionHeading>
       <p className="mb-3">
-        Je suis un passionné  de <span className="font-medium">Conception</span>,
-        de gadgets fonctionnels répondants à des besoins. Quotidiennement, 
-        j'apprends de nouvelles choses j'améliore mes projets existants qui
-        répondent à des besoins personnels{" "}
-        <span className="font-medium">Je me considère développeur Full-stack</span>.{" "}
-        <span className="italic">J'aime le dev</span> pour le plaisir de concevoir des solutions à des problèmes.
-        <span className="underline"> La satisfaction</span> de voir que la mise en production a fonctionné du premier
-        coup reste une des plus belles choses qui puisse arriver dans une vie.
-        <span className="font-medium">React, Next.js, Node.js, et SQL</span>.
-        Enfin je suis aussi habitué à travailler avec typescript et prisma. Je
-        suis en constante veille technologique, de part ma grande curiosité
+        Passionné de <strong>conception</strong> et de création de dispositifs pratiques, je m'efforce quotidiennement d'apprendre et d'améliorer mes projets pour répondre à des besoins spécifiques. En tant que <strong>développeur Full-stack</strong>, je trouve un plaisir immense à élaborer des solutions innovantes aux problèmes rencontrés. <em>La satisfaction</em> de réussir une mise en production du premier coup est l'une des expériences les plus gratifiantes de ma carrière. Je maîtrise <strong>React, Next.js, Node.js, et SQL</strong> et je suis également compétent en TypeScript et Prisma. Ma grande curiosité me pousse à rester constamment à l'affût des dernières avancées technologiques.
       </p>
 
       <p>
-        <span className="italic">Quand je ne developpe pas</span>, Je m'amuse à
-        jouer avec mon chien lors de ballades en forets, parcs etc...
+        <i>Lorsque je ne développe pas</i>, je prends plaisir à jouer avec mon chien lors de balades en forêt, dans les parcs et autres espaces verts.
       </p>
     </motion.section>
   );
