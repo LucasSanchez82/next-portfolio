@@ -1,6 +1,6 @@
 import imaginarium from "@/public/imaginarium.png";
 import publicom from "@/public/publicom.png";
-import publicom_admin from "@/public/publicom_admin.png.png";
+import publicom_admin from "@/public/publicom_admin.png";
 import manweb from "@/public/manweb.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
