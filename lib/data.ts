@@ -1,4 +1,5 @@
 import imaginarium from "@/public/imaginarium.png";
+import publicom from "@/public/publicom.png";
 import manweb from "@/public/manweb.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
@@ -61,12 +62,12 @@ export const veilleRSS = [
 
 export const experiencesData = [
   {
-    title: "Creations de projets divers",
-    location: "Domicile",
+    title: "Entrée en BTS SIO option SLAM",
+    location: "France",
     description:
-      "Apprentissage des bases de programmations puis de concept propre à certains framework, par exemple pour ne citer que Nextjs et ses :  app router, useQuery, re-render, hydratation, server side rendering",
+      "Le BTS SIO option SLAM m'a permis d'acquérir des compétences fondamentales en développement logiciel, gestion de bases de données et programmation web.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019-Aujourd'hui",
+    date: "2023",
   },
   {
     title: "Imaginarium php",
@@ -88,18 +89,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Publicom",
+    description:
+      "Solution métier de gestion de panneaux publicitaires",
+    tags: ["Php", "Codeigniter4", "Mysql", "Bootstrap", "MVC"],
+    imageUrl: publicom,
+    projectUrl: "https://publicom.lucas-sanchez.fr"
+  },
+  {
     title: "Imaginarium",
     description:
       "Solution métier de gestion des ressources humaines",
-    tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
+    tags: ["React", "Next.js14", "Mysql", "Tailwind", "shadcn"],
     imageUrl: imaginarium,
-    projectUrl: "https://manweb.lucas-sanchez.fr"
+    projectUrl: "https://imaginarium.lucas-sanchez.fr"
   },
   {
     title: "Manweb",
     description:
       "Application web qui permet de noter ses lectures, l'endroit ou on peut les lires et le dernier chapitre lu",
-    tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
+    tags: ["React", "Next.js14", "Postgresql", "Tailwind", "shadcn"],
     imageUrl: manweb,
     projectUrl: "https://manweb.lucas-sanchez.fr"
   },
@@ -110,11 +119,20 @@ export const skillsData = [
   // "CSS",
   // "JavaScript",
   "Next.js",
-  "Node.js",
   "React",
   "TypeScript",
+  "Node.js",
+  "Javascript",
+  "Bun",
   "Git",
   "SQL",
+  "Mysql",
+  "PostgreSql",
+  "MongoDB",
+  "PHP",
+  "JAVA",
+  "JAVA SWING",
+
   // "Tailwind",
   // "Prisma",
   // "MongoDB",
