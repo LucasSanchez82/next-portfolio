@@ -1,5 +1,6 @@
 import imaginarium from "@/public/imaginarium.png";
 import publicom from "@/public/publicom.png";
+import publicom_admin from "@/public/publicom_admin.png.png";
 import manweb from "@/public/manweb.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
@@ -95,6 +96,14 @@ export const projectsData = [
     tags: ["Php", "Codeigniter4", "Mysql", "Bootstrap", "MVC"],
     imageUrl: publicom,
     projectUrl: "https://publicom.lucas-sanchez.fr"
+  },
+  {
+    title: "Publicom admin",
+    description:
+      "Solution métier de gestion des utilisateurs",
+    tags: ["Java", "Swing", "Mysq", "MVC"],
+    imageUrl: publicom_admin,
+    projectUrl: "https://github.com/LucasSanchez82/publicom_admin"
   },
   {
     title: "Imaginarium",
