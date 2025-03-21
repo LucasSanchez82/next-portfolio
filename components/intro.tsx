@@ -2,12 +2,12 @@
 
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
-import myFace from "@/public/my-face.jpeg";
+import myFace from "@/public/lucas-sanchez.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { FaEye, FaGithubSquare, FaTable } from "react-icons/fa";
+import { FaEye, FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   const { ref } = useSectionInView("Accueil", 0.5);
@@ -36,7 +36,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -62,7 +62,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-        Bonjour, je m'appelle <strong>Lucas Sanchez</strong>
+          Bonjour, je m'appelle <strong>Lucas Sanchez</strong>
         </span>{" "}
         <br />
         Je suis un{" "}
@@ -74,7 +74,10 @@ export default function Intro() {
           années d'apprentissage autonome et à ma curiosité naturelle,
         </span>{" "}
         je nourris en permanence mon savoir en{" "}
-        <span className="font-bold">Javascript</span>. Animé par l'enthousiasme de réaliser des <span className="italic">sites web et applications</span>, je me spécialise actuellement en{" "}
+        <span className="font-bold">Javascript</span>. Animé par l'enthousiasme
+        de réaliser des{" "}
+        <span className="italic">sites web et applications</span>, je me
+        spécialise actuellement en{" "}
         <span className="underline">React et Next.js</span>.
       </motion.h1>
 
@@ -101,20 +104,11 @@ export default function Intro() {
 
           <Link
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="https://drive.google.com/file/d/1GFmoAVfgcXZSFnynwbqB7dcUOvap0qnx/view?usp=sharing"
+            href="https://drive.google.com/file/d/1qipYWRqTnVB8YQYulbkCeBMk5ptuyD7_/view?usp=sharing"
             target="_blank"
           >
             Visualiser CV
             <FaEye className="opacity-60 group-hover:translate-y-1 transition" />
-          </Link>
-
-          <Link
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="https://drive.google.com/file/d/1PWmDRDksCSS3KCeOxgc02LPsfmjmhwYu/view?usp=sharing"
-            target="_blank"
-          >
-            Tableau synthèse
-            <FaTable className="opacity-60 group-hover:translate-y-1 transition" />
           </Link>
         </div>
         <div className="flex">
