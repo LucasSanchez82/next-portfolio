@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -19,23 +18,32 @@ export default function About() {
     >
       <SectionHeading>A propos de moi</SectionHeading>
       <p className="mb-3">
-        Je suis un passioné de <span className="font-medium">Conception</span>,
-        de gadgets fonctionnels répondants à des besoins. Quotidiennement
-        j'apprends de nouvelles choses j'améliore mes projets existants qui
-        repondent à des besoins personnels
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">J'aime le dev</span> pour le plaisir de concevoir
-        des solutions à des problèmes.
-        <span className="underline"> La satisfaction </span>de voir que la mise en production a fonctionné du premier
-        coup reste une des plus belles choses qui puisse arriver dans une vie.
-        <span className="font-medium">React, Next.js, Node.js, et SQL</span>.
-        Enfin je suis aussi habitué à travailler avec typescript et prisma. Je
-        suis en constante veille technologique, de part ma grande curiosité
+        Passionné de <strong>conception</strong> et de création de dispositifs
+        pratiques, je m'efforce quotidiennement d'apprendre et d'améliorer mes
+        projets pour répondre à des besoins spécifiques. En tant que{" "}
+        <strong>développeur Full-stack</strong>, je trouve un plaisir immense à
+        élaborer des solutions innovantes aux problèmes rencontrés.{" "}
+        <em>La satisfaction</em> de réussir une mise en production du premier
+        coup est l'une des expériences les plus gratifiantes de ma carrière. Je
+        maîtrise <strong>React, Next.js, Node.js, et SQL</strong> et je suis
+        également compétent en TypeScript et Prisma. Ma grande curiosité me
+        pousse à rester constamment à l'affût des dernières avancées
+        technologiques.
       </p>
 
-      <p>
-        <span className="italic">Quand je ne developpe pas</span>, Je m'amuse à
-        jouer avec mon chien lors de ballades en forets, parcs etc...
+      <p className="mb-3">
+        Mon entrée chez <strong>France Challenges</strong> a marqué une étape
+        importante dans ma carrière, me permettant de travailler au sein d'une{" "}
+        <strong>équipe dynamique</strong> et collaborative. J'ai acquis une
+        expérience précieuse en participant activement à des{" "}
+        <strong>réunions professionnelles</strong>, des <em>daily stand-ups</em>
+        , et en suivant une méthodologie de travail en mode projet. Nous avons
+        utilisé des outils tels que <strong>GitHub Projects</strong> pour
+        organiser et suivre les tâches via des <em>drafts</em>, <em>issues</em>,
+        et <em>pull requests</em>, favorisant une gestion efficace et structurée
+        des projets. Cette expérience m'a permis de renforcer mes compétences en
+        communication, en collaboration et en gestion de projet tout en
+        continuant à développer des solutions techniques robustes et innovantes.
       </p>
     </motion.section>
   );

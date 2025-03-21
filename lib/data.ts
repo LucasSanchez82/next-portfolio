@@ -1,5 +1,7 @@
 import imaginarium from "@/public/imaginarium.png";
-import manweb from "@/public/manweb.png";
+import publicom from "@/public/publicom.png";
+import publicom_admin from "@/public/publicom_admin.png";
+import manweb from "@/public/manweb.webp";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { SiPhp } from "react-icons/si";
@@ -26,10 +28,10 @@ export const links = [
     name: "Experiences",
     hash: "#experience",
   },
-  {
-    name: "Veille",
-    hash: "#veille",
-  },
+  // {
+  //   name: "Veille",
+  //   hash: "#veille",
+  // },
   {
     name: "Contact",
     hash: "#contact",
@@ -53,34 +55,50 @@ export const veilleRSS = [
     url: "https://vercel.com/atom",
   },
   {
-    slug: "react-blog",
-    title: "react blog",
-    url: "https://legacy.reactjs.org/feed.xml",
-  }
-]
+    slug: "bun",
+    title: "bun runtime javascript",
+    url: "https://bun.sh/rss.xml",
+  },
+];
 
 export const experiencesData = [
   {
-    title: "Creations de projets divers",
-    location: "Domicile",
+    title: "BTS SIO option SLAM",
+    location: "France",
     description:
-      "Apprentissage des bases de programmations puis de concept propre certains framework, par exemple pour ne citer que Nextjs et ses :  app router, useQuery, re-render, hydratation, server side rendering",
+      "Formation en BTS SIO option SLAM, acquérant des compétences clés en développement logiciel, gestion de bases de données et programmation web.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019-Aujourd'hui",
+    date: "2023",
   },
   {
-    title: "Imaginarium php",
+    title: "Imaginarium - Cahier des charges et maquette PHP",
     location: "Montdoumerc",
     description:
-      "Mise en place du cahier des charges, modélisation de la base de donnée et conception de la maquette php",
+      "Rédaction du cahier des charges, modélisation de la base de données et conception de la maquette en PHP.",
     icon: React.createElement(SiPhp),
     date: "2023",
   },
   {
-    title: "Imaginarium NextJS",
-    location: "MontDoumerc",
+    title: "Imaginarium - Migration vers Next.js",
+    location: "Montdoumerc",
     description:
-      "Migration vers NextJS, qui permet plus d'interactivites et un developpement plus rapide",
+      "Migration du projet vers Next.js pour une meilleure interactivité et un développement plus rapide.",
+    icon: React.createElement(TbBrandNextjs),
+    date: "2024",
+  },
+  {
+    title: "ESN81 - Bachelor en informatique",
+    location: "Albi",
+    description:
+      "Participation à un Bachelor à la CCI de Castres avec des professionnels et au forum cybersécurité organisé par la CCI (15mars): ateliers crochetage, spoofing, force brute, OSINT, Flipper Zero.",
+    icon: React.createElement(TbBrandNextjs),
+    date: "2024",
+  },
+  {
+    title: "France Challenges - Alternant développeur web",
+    location: "Albi",
+    description:
+      "Alternant développeur web chez France Challenges, j'ai travaillé sur des projets en React et Strapi, découvert la communication avec un back-end via GraphQL et intégré l'API du CRM de l'entreprise dans des projets concrets.",
     icon: React.createElement(TbBrandNextjs),
     date: "2024",
   },
@@ -88,39 +106,55 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Publicom",
+    description: "Solution métier de gestion de panneaux publicitaires",
+    tags: ["Php", "Codeigniter4", "Mysql", "Bootstrap", "MVC"],
+    imageUrl: publicom,
+    projectUrl: "https://publicom.lucas-sanchez.fr",
+  },
+  {
+    title: "Publicom admin",
+    description: "Solution métier de gestion des utilisateurs",
+    tags: ["Java", "Swing", "Mysq", "MVC"],
+    imageUrl: publicom_admin,
+    projectUrl: "https://github.com/LucasSanchez82/publicom_admin",
+  },
+  {
     title: "Imaginarium",
-    description:
-      "Solution métier de gestion des ressources humaines",
-    tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
+    description: "Solution métier de gestion des ressources humaines",
+    tags: ["React", "Next.js14", "Mysql", "Tailwind", "shadcn"],
     imageUrl: imaginarium,
+    projectUrl: "https://imaginarium.lucas-sanchez.fr",
   },
   {
     title: "Manweb",
     description:
       "Application web qui permet de noter ses lectures, l'endroit ou on peut les lires et le dernier chapitre lu",
-    tags: ["React", "Next.js14", "SQL", "Tailwind", "shadcn"],
+    tags: ["React", "Next.js14", "Postgresql", "Tailwind", "shadcn"],
     imageUrl: manweb,
+    projectUrl: "https://manweb.lucas-sanchez.fr",
   },
 ] as const;
 
 export const skillsData = [
-  // "HTML",
-  // "CSS",
-  // "JavaScript",
   "Next.js",
-  "Node.js",
   "React",
   "TypeScript",
+  "Node.js",
+  "Javascript",
+  "Bun",
   "Git",
   "SQL",
-  // "Tailwind",
-  // "Prisma",
-  // "MongoDB",
-  // "Redux",
-  // "GraphQL",
-  // "Apollo",
-  // "Express",
-  // "Python",
-  // "Django",
-  // "Framer Motion",
+  "Mysql",
+  "PostgreSql",
+  "MongoDB",
+  "PHP",
+  "JAVA",
+  "JAVA SWING",
+  "Strapi",
+  "Tailwind",
+  "GraphQL",
+  "Apollo",
+  "Express",
+  "Framer Motion",
 ] as const;

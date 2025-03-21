@@ -2,13 +2,12 @@
 
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSectionInView } from "@/lib/hooks";
+import myFace from "@/public/lucas-sanchez.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { FaEye, FaGithubSquare, FaTable } from "react-icons/fa";
-import { HiDownload, HiViewList } from "react-icons/hi";
-import myFace from "@/public/my-face.jpeg";
+import { FaEye, FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   const { ref } = useSectionInView("Accueil", 0.5);
@@ -37,7 +36,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -63,22 +62,23 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">
-          Bonjour, je suis <strong>Lucas Sanchez</strong>
+          Bonjour, je m'appelle <strong>Lucas Sanchez</strong>
         </span>{" "}
         <br />
-        Un{" "}
+        Je suis un{" "}
         <span className="font-bold">
-          jeune développeur visant le fullstack.
+          développeur débutant avec une orientation fullstack.
         </span>{" "}
-        force de mes{" "}
+        Grâce à mes{" "}
         <span className="font-bold">
-          années autodidactes et de ma curiosité
+          années d'apprentissage autonome et à ma curiosité naturelle,
         </span>{" "}
-        j'alimente constamment mes connaissances{" "}
-        <span className="font-bold">Javascript</span>. Toujours enjoué à l'idée
-        de concrétiser des <span className="italic">sites & apps</span>. Je me
-        concentre actuellement sur{" "}
-        <span className="underline">React (Next.js)</span>.
+        je nourris en permanence mon savoir en{" "}
+        <span className="font-bold">Javascript</span>. Animé par l'enthousiasme
+        de réaliser des{" "}
+        <span className="italic">sites web et applications</span>, je me
+        spécialise actuellement en{" "}
+        <span className="underline">React et Next.js</span>.
       </motion.h1>
 
       <motion.div
@@ -102,40 +102,31 @@ export default function Intro() {
             <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
           </Link>
 
-          <a
+          <Link
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/CV.pdf"
+            href="https://drive.google.com/file/d/1qipYWRqTnVB8YQYulbkCeBMk5ptuyD7_/view?usp=sharing"
             target="_blank"
           >
             Visualiser CV
             <FaEye className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
-
-          <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/tableur.pdf"
-            target="_blank"
-          >
-            Tableau synthèse
-            <FaTable className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
+          </Link>
         </div>
         <div className="flex">
-          <a
+          <Link
             className="bg-white p-4 m-2  text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/lucas-sanchez-8ba32920a/"
             target="_blank"
           >
             <BsLinkedin />
-          </a>
+          </Link>
 
-          <a
+          <Link
             className="bg-white p-4 m-2 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/LucasSanchez82"
             target="_blank"
           >
             <FaGithubSquare />
-          </a>
+          </Link>
         </div>
       </motion.div>
     </section>

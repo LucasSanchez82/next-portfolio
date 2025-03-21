@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Lucas Sanchez | Portfolio personnel",
-  description: "Lucas Sanchez, développeur web et étudiant en BTS SIO SLAM",
+  description: "Lucas Sanchez, développeur web et étudiant en BTS SIO SLAM"
 };
 
 export default function RootLayout({
