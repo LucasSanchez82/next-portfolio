@@ -104,7 +104,7 @@ export default function Intro() {
 
           <Link
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105  m-2 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="https://drive.google.com/file/d/1qipYWRqTnVB8YQYulbkCeBMk5ptuyD7_/view?usp=sharing"
+            href="https://rxresu.me/sanchez-lucas/developpeur-web-base"
             target="_blank"
           >
             Visualiser CV
