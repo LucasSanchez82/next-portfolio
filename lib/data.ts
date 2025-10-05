@@ -110,21 +110,21 @@ export const projectsData = [
     description: "Solution métier de gestion de panneaux publicitaires",
     tags: ["Php", "Codeigniter4", "Mysql", "Bootstrap", "MVC"],
     imageUrl: publicom,
-    projectUrl: "https://publicom.lucas-sanchez.fr",
+    // projectUrl: "https://publicom.lucas-sanchez.fr",
   },
   {
     title: "Publicom admin",
     description: "Solution métier de gestion des utilisateurs",
     tags: ["Java", "Swing", "Mysq", "MVC"],
     imageUrl: publicom_admin,
-    projectUrl: "https://github.com/LucasSanchez82/publicom_admin",
+    // projectUrl: "https://github.com/LucasSanchez82/publicom_admin",
   },
   {
     title: "Imaginarium",
     description: "Solution métier de gestion des ressources humaines",
     tags: ["React", "Next.js14", "Mysql", "Tailwind", "shadcn"],
     imageUrl: imaginarium,
-    projectUrl: "https://imaginarium.lucas-sanchez.fr",
+    // projectUrl: "https://imaginarium.lucas-sanchez.fr",
   },
   {
     title: "Manweb",
@@ -132,7 +132,7 @@ export const projectsData = [
       "Application web qui permet de noter ses lectures, l'endroit ou on peut les lires et le dernier chapitre lu",
     tags: ["React", "Next.js14", "Postgresql", "Tailwind", "shadcn"],
     imageUrl: manweb,
-    projectUrl: "https://manweb.lucas-sanchez.fr",
+    // projectUrl: "https://manweb.lucas-sanchez.fr",
   },
 ] as const;
 
